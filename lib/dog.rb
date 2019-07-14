@@ -47,9 +47,10 @@ class Dog
   
   def self.find_by_id(id)
     sql= <<-SQL
-    
+      SELECT * FROM dogs
+      
     SQL 
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql, id).map
   end 
   
   def self.find_or_create_by
