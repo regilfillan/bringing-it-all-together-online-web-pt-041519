@@ -29,7 +29,10 @@ class Dog
     if self.id
       self.update
     else
+      sql= <<-SQL
       
+      SQL
+      id= DB[:conn]
   end 
   
   def self.create 
