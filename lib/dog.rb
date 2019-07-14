@@ -21,7 +21,7 @@ class Dog
   end 
   
   def self.drop_table
-    
+    sql= ""
   end 
   
   def save
