@@ -30,9 +30,11 @@ class Dog
       self.update
     else
       sql= <<-SQL
-      
+        INSERT INTO dogs (name, breed)
+        VALUES (?,?)
       SQL
-      id= DB[:conn]
+      DB[:conn].execute()
+      id= DB[:conn].execute()
   end 
   
   def self.create 
